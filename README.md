@@ -1,6 +1,6 @@
 # DuplicateImagesDetector
 Detect all duplicate images on large dataset using Hadoop and Skein Hash function family.  
-**Author**: Giang Van Luc
+#### **Author**: Giang Van Luc
 ## Idea
 Read content of eachfile, then hash with Skein algorithm. Images whose hash output are the same will be duplicate. Group it with Hadoop MapReduce.  
 ## Requirements
