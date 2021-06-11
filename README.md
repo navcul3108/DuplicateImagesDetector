@@ -18,11 +18,11 @@ jar cf ./source/DuplicateImagesDetector.jar ./source/*.class
 ```
 3. Create your input folder in order to contain images.
 ```
-hadoop fs -mkdir /user/\<#your_username\>/DuplicateImagesDetector/input
+hadoop fs -mkdir /user/<#your_username\>/DuplicateImagesDetector/input
 ```
 4. Create output folder.
 ```
-hadoop fs -mkdir /user/\<#your_username\>/DuplicateImagesDetector/output
+hadoop fs -mkdir /user/<#your_username\>/DuplicateImagesDetector/output
 ```
 5. Put your image folder to input folder.
 ```
