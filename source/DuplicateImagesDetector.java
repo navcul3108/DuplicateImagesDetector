@@ -30,13 +30,6 @@ import source.DIDFileInputFormat;
 public class DuplicateImagesDetector {
 	final static Text DEFAULT_TEXT_ARRAY[] = new Text[0];
     public static class DuplicateImagesDetectorMapper extends Mapper < Text, BytesWritable, BytesWritable, Text> {
-		/*private static Text filenameKey = null;
-        @Override
-		protected void setup(Context context) throws IOException, InterruptedException {
-			InputSplit split = context.getInputSplit();
-			Path path = ((FileSplit) split).getPath();
-			filenameKey = new Text(path.getParent().getName()+"/"+path.getName());
-		}*/
 		@Override
         public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException{			
 			byte[] imageBytes = value.getBytes();

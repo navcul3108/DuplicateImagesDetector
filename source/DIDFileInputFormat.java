@@ -9,7 +9,7 @@ import org.apache.hadoop.mapreduce.JobContext;
 import org.apache.hadoop.mapreduce.RecordReader;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
-import Source.CompleteFileRecordReader;
+import source.CompleteFileRecordReader;
 import org.apache.hadoop.io.Text;
 
 public class DIDFileInputFormat extends FileInputFormat<Text, BytesWritable> {
