@@ -18,21 +18,21 @@ jar cf ./source/DuplicateImagesDetector.jar ./source/*.class
 ```
 3. Create your input folder in order to contain images.
 ```
-hadoop fs -mkdir /user/<#your_username\>/DuplicateImagesDetector/input
+hadoop fs -mkdir /user/<#your_username>/DuplicateImagesDetector/input
 ```
 4. Create output folder.
 ```
-hadoop fs -mkdir /user/<#your_username\>/DuplicateImagesDetector/output
+hadoop fs -mkdir /user/<#your_username>/DuplicateImagesDetector/output
 ```
 5. Put your image folder to input folder.
 ```
-hadoop fs -put /link/to/your/images/folder /user/\<#your_username\>/DuplicateImagesDetector/input
+hadoop fs -put /link/to/your/images/folder /user/<#your_username\/DuplicateImagesDetector/input
 ```
 6. Run with your images.
 ```
-hadoop jar ./source/DuplicateImagesDetector.jar source.DuplicateImagesDetector /user/student116/DuplicateImagesDetector/input/<#your_input_folder_name> /user/student116/Assignment/output/<#your_input_folder_name>
+hadoop jar ./source/DuplicateImagesDetector.jar source.DuplicateImagesDetector /user/<#your_username>/DuplicateImagesDetector/input/<#your_input_folder_name> /user/<#your_username>/DuplicateImagesDetector/output/<#your_input_folder_name>
 ```
 7. Copy output file to local.
 ```
-hadoop fs -get /user/student116/Assignment/output/<#your_input_folder_name>/part-r-00000 ./output/
+hadoop fs -get /user/<#your_username>/DuplicateImagesDetector/output/<#your_input_folder_name>/part-r-00000 ./output/
 ```
